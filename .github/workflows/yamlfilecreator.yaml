@@ -24,4 +24,5 @@ jobs:
           git config user.email "jjagadeeshgouda1996@gmail.com"
           git add generated.yaml
           git commit -m "Generate YAML file"
+          git remote add origin_with_token https://$GITHUB_ACTOR:${{ secrets.YOUR_PAT_SECRET }}@github.com/campusterminalhub/ccpworkflowtest.git
           git push
